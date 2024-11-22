@@ -1,0 +1,844 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="IMAGES/favicon.ico">
+    <!-- Link CSS Style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="CSS/bootstrap2.min.css" rel="stylesheet" />
+    <link href="CSS/bootstrap.css" rel="stylesheet" />
+    <link href="CSS/mdb.min.css" rel="stylesheet" />
+    <link href="CSS/animate.css" rel="stylesheet" />
+    <link href="CSS/icomoon.css" rel="stylesheet" />
+    <link href="CSS/owl.carousel.min.css" rel="stylesheet" />
+    <link href="CSS/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="CSS/simple-line-icons.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
+    <!--<link href="CSS/style2.css" rel="stylesheet" />-->
+
+    <!---------------------- Link for Map ----------------------->
+    <link href="CSS/Map/AdminLTE.min.css" rel="stylesheet" />
+    <link href="CSS/Map/leaflet.css" rel="stylesheet" />
+    <link href="CSS/Map/MarkerCluster.css" rel="stylesheet" />
+    <link href="CSS/Map/MarkerCluster.Default.css" rel="stylesheet" />
+    <link href="CSS/Map/leaflet-sidebar.min.css" rel="stylesheet" />
+   
+    <!---------------------- Link for Map ----------------------->
+
+    
+    <!--<script src="SCRIPT/modernizr-2.6.2.min.js"></script>-->
+    <!-------------------- SLIDE CSS STYLE ---------------------------->
+
+    <style rel="stylesheet">
+        /* TEMPLATE STYLES */
+        /* Necessary for full page carousel*/
+
+        html,
+        body {
+            height: 100%;
+        }
+        /* Navigation*/
+
+        .navbar {
+            background-color: dodgerblue;
+        }
+
+        .top-nav-collapse {
+            background-color: #4285F4;
+        }
+
+        footer.page-footer {
+            background-color: #4285F4;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .navbar {
+                background-color: #4285F4;
+            }
+        }
+        /* Carousel*/
+
+        .carousel {
+            height: 100%;
+        }
+
+        @media (max-width: 776px) {
+            .carousel {
+                height: 100%;
+            }
+        }
+
+        .carousel-item,
+        .active {
+            height: 100%;
+        }
+
+        .carousel-inner {
+            height: 100%;
+        }
+
+        .carousel-item:nth-child(2) {
+            background-image: url('IMAGES/experiential bana.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*height: 490px;*/
+            opacity: 0.2;
+        }
+
+        .carousel-item:nth-child(1) {
+            background-image: url('IMAGES/exhibition bana.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*height: 490px;*/
+            opacity: 0.2;
+        }
+
+        .carousel-item:nth-child(3) {
+            background-image: url('IMAGES/BranadLift bana.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*height: 490px;*/
+            opacity: 0.2;
+        }
+
+        .carousel-item:nth-child(4) {
+            background-image: url('IMAGES/printHUB bana.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.2;
+        }
+
+        .carousel-item:nth-child(5) {
+            background-image: url('IMAGES/explorer bana.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.2;
+        }
+        .carousel-item:nth-child(6) {
+            background-image: url('IMAGES/adoravel bana.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.2;
+        }
+        /*Caption*/
+
+         .carousell {
+            height: 100%;
+        }
+
+        @media (max-width: 776px) {
+            .carousell {
+                height: 100%;
+            }
+        }
+
+        .carousell-item,
+        .active {
+            height: 100%;
+        }
+
+        .carousell-inner {
+            height: 100%;
+        }
+
+        .carousell-item:nth-child(2) {
+            /*background-image: url('IMAGES/experiential bana.png');*/
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*height: 490px;*/
+            /*opacity: 0.2;*/
+        }
+
+        .carousell-item:nth-child(1) {
+            /*background-image: url('IMAGES/exhibition bana.png');*/
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*height: 490px;*/
+            /*opacity: 0.2;*/
+        }
+
+        .carousell-item:nth-child(3) {
+            /*background-image: url('IMAGES/BranadLift bana.png');*/
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*height: 490px;*/
+            /*opacity: 0.2;*/
+        }
+
+        .carousell-item:nth-child(4) {
+            /*background-image: url('IMAGES/printHUB bana.png');*/
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*opacity: 0.2;*/
+        }
+
+        .carousell-item:nth-child(5) {
+            /*background-image: url('IMAGES/explorer bana.png');*/
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*opacity: 0.2;*/
+        }
+        .carousell-item:nth-child(6) {
+            /*background-image: url('IMAGES/adoravel bana.png');*/
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*opacity: 0.2;*/
+        }
+        /*Caption*/
+
+        .flex-center {
+            color: #f21826;
+                   /*font-size: 14px;*/
+        }
+    </style>
+
+
+    <!------------------------ SLIDE CSS STYLE ENDED ---------------------------->
+
+
+</head>
+<body>
+    <!------------------------------ Header (Style CSS;) ------------------------>
+
+    <header role="banner" id="fh5co-header">
+        <div class="">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <!-- Mobile Toggle Menu Button -->
+                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                    <a class="navbar-brand" href="#">
+                        <img src="IMAGES/Nazirite-Logos2.png" />
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
+                        <li><a href="www.nazirite.com.ng/aboutus.html" data-nav-section="explore"><span>About Us</span></a></li>
+                        <li><a href="#" data-nav-section="pricing"><span>Our Businesses</span></a></li>
+                        <li><a href="www.nazirite.com.ng/contactus.aspx" data-nav-section="contact"><span>Contact Us</span></a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <br /><br />
+    <!------------------------------ Header ENDED ------------------------------->
+    <!-------------------------------- CONSTANT SLIDE ------------------------------------>
+
+    <section id="fh5co-home" data-section="home" style="background-image: url('IMAGES/Main-Banner.png'); height:650px;" data-stellar-background-ratio="0.5">
+        <div class="gradient"></div>
+    </section>
+
+    <!-------------------------------- SLIDE ENDED ------------------------------>
+    <!-------------------------------- SLIDE ------------------------------------>
+    <section id="" data-section="home" >
+        <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel" style="height:650px;">
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-1" data-slide-to="1"></li>
+
+                <li data-target="#carousel-example-1" data-slide-to="2"></li>
+                <li data-target="#carousel-example-1" data-slide-to="3"></li>
+                <li data-target="#carousel-example-1" data-slide-to="4"></li>
+                <!--<li data-target="#carousel-example-1" data-slide-to="5"></li>-->
+            </ol>
+            <!--/.Indicators-->
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+                <!--First slide-->
+                <div class="carousel-item active">
+                    
+                </div>
+                <!--/.First slide-->
+                <!--Second slide -->
+                <div class="carousel-item">
+                   
+                </div>
+
+                <div class="carousel-item">
+                   
+                </div>
+
+                <div class="carousel-item">
+                   
+                </div>
+
+                <div class="carousel-item">
+                   
+                </div>
+
+                <div class="carousel-item">
+                   
+                </div>
+
+            </div>
+            <!--/.Slides-->
+            <!--Controls-->
+            <a class="left carousel-control" href="#carousel-example-1" role="button" data-slide="prev">
+                <span class="icon-prev" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-1" role="button" data-slide="next">
+                <span class="icon-next" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+        </div>
+        </section>
+        <!-------------------------------- SLIDE ENDED ------------------------------>
+
+    <!-------------------------------- BODY ABOUT US ---------------------------->
+    <main></main>
+    <section id="fh5co-explore" class="fh5co-bg-color" data-section="explore">
+        <!--<div id="fh5co-counter-section" class="fh5co-counters">-->
+        <div class="fh5co-team">
+            <div class="container">
+                <div id="fh5co-team" class="to-animate">
+                    <div class="row">
+                        <div class="flex-center animated fadeInUp">
+                            <div class="col-md-12 section-heading text-center">
+                                <h2 class="to-animate red-text"><span>ABOUT  NAZIRITE</span></h2>
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2 subtext">
+                                        <h3 class="to-animate">
+                                            @ Nazirite Communications, we provide creative, both localized and integrated solutions principally, brand architecture, management & repositioning; marketing communications both digital & experiential, PR, production of marketing collaterals & corporate promotional items, OOH media, workforce development and media consulting that always promote our clients' businesses, enhance their brand recognition and achieve tangible returns.
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--<div class="flex-center animated fadeInLeft">-->
+                        <div class="col-md-4">
+                            <div class="team-box text-center to-animate-2">
+                                <div class="user"><img class="img-reponsive" src="IMAGES/Nazirite-vision.png" alt="Roger Garfield"></div>
+                                <h3>Our Vision</h3>
+                                <!--<span class="position">Co-Founder, Lead Developer</span>-->
+                                <p>A world class media organization, recognized as the best in terms of exemplary business conduct and total quality assurance. </p>
+                                <a href="aboutus.html" class="link-text"><h5>Read more <i class="fa fa-chevron-right"></i></h5></a>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="team-box text-center to-animate-2">
+                                <div class="user"><img class="img-reponsive" src="IMAGES/Nazirite-mission.png" alt="Roger Garfield"></div>
+                                <h3>Our Mission</h3>
+                                <!--<span class="position">Co-Founder, Product Designer</span>-->
+                                <p>To be consistent in delivering a world class media services that is qualitative, satisfactory and commendable; by this we mean we are tasked to...........</p>
+                                <a href="aboutus.html" class="link-text"><h5>Read more <i class="fa fa-chevron-right"></i></h5></a>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="teams-box text-center to-animate-2">
+                                <div class="user"><img class="img-reponsive" src="IMAGES/Nazirite-strategy.png" alt="Roger Garfield"></div>
+                                <h3>Strategic Vision</h3>
+                                <!--<span class="position">Full Stack Developer</span>-->
+                                <p>Our three (3) years vision demands that we build a very strong base customers account and establish an undeniable market presence.</p>
+                                <a href="aboutus.html" class="link-text"><h5>Read more <i class="fa fa-chevron-right"></i></h5></a>
+                            </div>
+                        </div>
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--</div>-->
+
+    </section>
+
+    <!-------------------------------- ABOUT US ENDED --------------------------->
+
+    <!-------------------------------- OUR BUSINESS ----------------------------->
+    <section class="section feature-box" id="best-features">
+        <div class="fh5co-team">
+            <div class="container">
+                <div id="fh5co-services" class="to-animate">
+                    <div class="row">
+                        <div class="flex-center animated fadeInUp">
+                            <!--Section heading-->
+                            <div class="col-md-12 section-heading text-center">
+                                <h2 class="to-animate wow fadeIn red-text" data-wow-delay="0.2s"><span>OUR BUSINESSES</span></h2>
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2 subtext">
+                                        <h4 class="to-animate">
+                                            We continuously innovate, and stay at the edge of the current realities of our industry, this edge we will retain in order to deliver qualitatively, competitively, on time and within budget, while focusing on being the best, at the same time, the leader in our industry.
+                                        </h4>
+                                        <!--<a href="" class="link-text"><h5 class="amber-text">For more details <i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i></h5></a>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Section description-->
+                        </div>
+                    </div>
+                    <!--------------------- Other Businesses ----------------->
+                    <!--First row-->
+                    <section id="Group" class="logos text-center section-space">
+                            <div class="container wow bounceInUp">
+                               
+                                <div>
+                                    <!-- end col-8 -->
+                                    <div class="col-md-10 col-xs-10 col-sm-10">
+                                        <ul class="logos">
+                                            <li style="width:250px; height:250px">
+                                                <a href="#" target="_blank">
+                                                    <img src="IMAGES/smallimagesbigimages/adoravel 1.png" alt="image" class="img-responsive">
+                                                    <div class="work">
+                                                        <img src="IMAGES/smallimagesbigimages/adoravel 1.png" alt="image">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <!-- end li -->
+                                            <li style="width:250px; height:250px">
+                                                <a href="#" target="_blank">
+                                                    <img src="IMAGES/smallimagesbigimages/brand lift 1.png" alt="image" class="img-responsive">
+                                                    <div class="work">
+                                                        <img src="IMAGES/smallimagesbigimages/brand lift 1.png" alt="image">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <!-- end li -->
+                                            <li style="width:250px; height:250px">
+                                                <a href="#" target="_blank">
+                                                    <img src="IMAGES/smallimagesbigimages/display & Exhibition 1.png" alt="image" class="img-responsive">
+                                                    <div class="work">
+                                                        <img src="IMAGES/smallimagesbigimages/display & Exhibition 1.png" alt="image">
+                                                    </div>
+                                                </a>
+                                            </li> 
+                                            <!-- end li -->
+                                            <li style="width:250px; height:250px">
+                                                <a href="#" target="_blank">
+                                                    <img src="IMAGES/smallimagesbigimages/explorer 1.png" alt="image" class="img-responsive">
+                                                    <div class="work">
+                                                        <img src="IMAGES/smallimagesbigimages/explorer 1.png" alt="image">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <!-- end li -->
+                                            <li style="width:250px; height:250px">
+                                                <a href="#" target="_blank">
+                                                    <img src="IMAGES/smallimagesbigimages/printhub 1.png" alt="image" class="img-responsive">
+                                                    <div class="work">
+                                                        <img src="IMAGES/smallimagesbigimages/printhub 1.png" alt="image">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <!-- end li -->
+                                            <li style="width:250px; height:250px">
+                                                <a href="#" target="_blank">
+                                                    <img src="IMAGES/smallimagesbigimages/street wise 1.png" alt="image" class="img-responsive">
+                                                    <div class="work">
+                                                        <img src="IMAGES/smallimagesbigimages/street wise 1.png" alt="image">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <!-- end li -->
+                                            </ul>
+                                        <!-- end ul -->
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </section>
+
+                                         
+                    <!--/First row-->
+                    <!------------------ Other Businesses Ended ------------->
+
+                </div>
+            </div>
+        </div>
+
+        <!--<!--<p class="section-description lead wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>-->
+
+
+    </section>
+
+
+
+
+   
+    <!----------------------------- OUR BUSINESS ENDED -------------------------->
+   
+    <!----------------------------- Our Driving Tools --------------------------->
+    <section class="section" id="testimonials">
+
+        <!--Section heading-->
+        <h1 class="section-heading wow fadeIn amber-text red-text" style="font-size:24px" data-wow-delay="0.2s">OUR DRIVING TOOLS</h1>
+
+        <div class="row">
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example" class="carousell testimonial-carousell slide carousell-multi-item wow fadeIn" data-ride="carousell">
+
+                <!--Controls-->
+                <div class="controls-top">
+                    <a class="btn-floating btn-small amber" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                    <a class="btn-floating btn-small amber" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                </div>
+                <!--/.Controls-->
+                <!--Indicators-->
+                <ol class="carousell-indicators">
+                    <li data-target="#multi-item-example" data-slide-to="0" class="active blue"></li>
+                    <li data-target="#multi-item-example" data-slide-to="1" class="yellow"></li>
+                    <li data-target="#multi-item-example" data-slide-to="2" class="green"></li>
+                    <li data-target="#multi-item-example" data-slide-to="3" class="blue"></li>
+                </ol>
+                <!--/.Indicators-->
+                <!--Slides-->
+                <div class="carousell-inner" role="listbox">
+
+                    <!--First slide-->
+                    <div class="carousell-item active">
+                        <!--First column-->
+                        <div class="col-md-5 col-md-offset-1 m-b-r wow zoomIn">
+
+                            <div class="view overlay hm-white-slight z-depth-2">
+                                <img class="img-responsive" src="IMAGES/experiential-bana2.png" width="650" height="400">
+                                <a>
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <!--/First column-->
+                        <!--Second column-->
+                        <div class="col-md-5 hidden-sm-down m-b-r wow zoomIn">
+                            <div class="card-block">
+                                <h2 class="blue-text">Our People</h2>
+                                <p>Nazirite Comunications is endowed with courteous, innovation pundits managing and directing different aspect of our administrative, technical and production value chain, this is why our deliverables are always in conformity to our clients’ specification.</p>
+                            </div>
+                        </div>
+                        <!--/Second column-->
+
+
+                    </div>
+
+                    <!--/.First slide-->
+                    <!--Second slide-->
+                    <div class="carousell-item">
+                        <!--First column-->
+                        <div class="col-md-5 col-md-offset-1 m-b-r wow zoomIn">
+
+                            <div class="view overlay hm-white-slight z-depth-2">
+                                <img class="img-responsive" src="IMAGES/printHUB-bana2.png" width="650" height="400">
+                                <a>
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <!--/First column-->
+                        <!--Second column-->
+                        <div class="col-md-5 hidden-sm-down m-b-r wow zoomIn">
+                            <div class="card-block">
+                                <h2 class="yellow-text">Technology</h2>
+                                <p>We leverage on high performance technology that has strategically positioned us above competition. This ensures precision in our processes and gives us an edge of rapid and excellent project delivery.</p>
+                            </div>
+                        </div>
+                        <!--/Second column-->
+
+
+                    </div>
+                    <!--/.Second slide-->
+                    <!--Third slide-->
+                    <div class="carousell-item">
+                        <!--First column-->
+                        <div class="col-md-5 col-md-offset-1 m-b-r wow zoomIn">
+
+                            <div class="view overlay hm-white-slight z-depth-2">
+                                <img class="img-responsive" src="IMAGES/explorer-bana2.png" width="650" height="400">
+                                <a>
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <!--/First column-->
+                        <!--Second column-->
+                        <div class="col-md-5 hidden-sm-down m-b-r wow zoomIn">
+                            <div class="card-block">
+                                <h2 class="green-text">Partnership & Information</h2>
+                                <p>In pursuance of global best practices, we believe it is a mandate for us to access cutting edge resourceful and global trend information from within and outside the country that can better shape our organization to taking advantage of the evolving market.</p>
+                            </div>
+                        </div>
+                        <!--/Second column-->
+
+
+                    </div>
+                    <!--/.Third slide-->
+
+                    <!--Forth slide-->
+                    <div class="carousell-item">
+                        <!--First column-->
+                        <div class="col-md-5 col-md-offset-1 m-b-r wow zoomIn">
+
+                            <div class="view overlay hm-white-slight z-depth-2">
+                                <img class="img-responsive" src="IMAGES/exhibition-bana2.png" width="650" height="400">
+                                <a>
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <!--/First column-->
+                        <!--Second column-->
+                        <div class="col-md-5 hidden-sm-down m-b-r wow zoomIn">
+                            <div class="card-block">
+                                <h2 class="blue-text">Total Quality Management</h2>
+                                <p>This defines our commitment to zero tolerance for defects and variation. We analyze every aspect of production chain into its smallest detail, understand how each part affects the output and seek a continuous improvement of each aspect.</p>
+                            </div>
+                        </div>
+                        <!--/Second column-->
+                        
+
+                    </div>
+                    <!--/.Forth slide-->
+
+                </div>
+                <!--/.Slides-->
+
+            </div>
+            <!--/.Carousel Wrapper-->
+        </div>
+    </section>
+    <!------------------------- Our Driving Tools Ended ------------------------->
+
+    
+    
+     <!-------------------------------- FOOTER LINE ------------------------------>
+
+    <section id="fh5co-footer" data-section="contact" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 to-animate">
+                    <h3 class="section-title">About Us</h3>
+                    <p>At Nazirite, we steadfastly agree on mutual-beneficial terms centered on producing satisfied customers; and you can be assured of a rewarding relationship and value exchanging experience with us at all times.</p>
+                    <p class="copy-right">
+                        &copy; 2017 Nazirite. <br>All Rights Reserved. <br>
+                        Designed by <a href="www.adefam.geospatialng.org" target="_blank">ACI</a>
+                    </p>
+                </div>
+
+                <!--Second column-->
+                <div class="col-md-7 wow fadeInRight">
+
+                    <!--Google map-->
+                    <div id="map-container" class="z-depth-1-half map-container" style="height: 400px">
+                        <section class="wrapper">
+                            <div id="sidebar" class="sidebar collapsed">
+                                <div class="sidebar-content active">
+                                </div>
+                                <ul class="sidebar-tabs bg-blue-gradient" role="tablist"></ul>
+        </div>
+                            <div class="sidebar-map" id="map" style="border: 1px solid #F0F0F0; height:400px; width:100%"> </div>
+</section>
+</div>
+
+                    <br>
+                    <!--Buttons-->
+                    <div class="row text-xs-center" data-wow-delay="0.2s">
+                        <div class="col-md-4 wow slideInUp">
+                            <a class="btn-floating btn-small amber"><i class="fa fa-map-marker"></i></a>
+                            <p>Suite 214, Mokland House, 2/7 Olu Koleosho Street, Off Simbiat Abiola Way, Ikeja, Lagos. </p>
+                            <p></p>
+                        </div>
+
+                        <div class="col-md-4 wow slideInUp" data-wow-delay="0.4s">
+                            <a class="btn-floating btn-small amber"><i class="fa fa-phone"></i></a>
+                            <p>+234-807-165-2878</p>
+                            <p>Mon - Fri, 8:00am -6:00pm</p>
+                        </div>
+
+                        <div class="col-md-4 wow slideInUp" data-wow-delay="0.6s">
+                            <a class="btn-floating btn-small amber"><i class="fa fa-envelope"></i></a>
+                            <p>info@naziriteng.com</p>
+                            <p>www.naziriteng.com</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/Second column-->
+                </div>
+                </div>
+        
+    </section>
+
+    <!-------------------------------- FOOTER ENDED ----------------------------->
+
+
+
+    <!------------------------------- SCRIPT LINE ------------------------------->
+    <!-- JQuery -->
+    <script type="text/javascript" src="SCRIPT/jquery-2.2.3.min.js"></script>
+
+    <!-- jQuery (Navbar) -->
+    <script src="SCRIPT/jquery.min.js"></script>
+
+    <!-- jQuery Easing -->
+    <script src="SCRIPT/jquery.easing.1.3.js"></script>
+
+    <!-- Tooltips -->
+    <script type="text/javascript" src="SCRIPT/tether.min.js"></script>
+
+
+    <!-- Bootstrap (Navbar) -->
+    <script src="SCRIPT/bootstrap2.min.js"></script>
+    <script src="SCRIPT/bootstrap3.min.js"></script>
+    <!--<script src="SCRIPT/bootstrap.min.js"></script>-->
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="SCRIPT/mdb.min.js"></script>
+
+    <!-- Waypoints -->
+    <script src="SCRIPT/jquery.waypoints.min.js"></script>
+
+    <!-- Stellar Parallax -->
+    <script src="SCRIPT/jquery.stellar.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="SCRIPT/owl.carousel.min.js"></script>
+
+    <!-- Counters -->
+    <script src="SCRIPT/jquery.countTo.js"></script>
+
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+    <script src="js/google_map.js"></script>
+    <!-- Main JS (Do not remove) (Navbar) -->
+    <script src="SCRIPT/jquery.min.js"></script>
+    <script src="SCRIPT/main.js"></script>
+
+
+    <!---------------------- Script for Map ----------------------->
+    <script src="SCRIPT/Map/jQuery-2.1.4.min.js"></script>
+    <!--<script src="SCRIPT/google_map.js"></script>-->
+    <script src="SCRIPT/Map/leaflet.js"></script>
+    <script src="SCRIPT/Map/leaflet.markercluster-src.js"></script>
+    <script src="SCRIPT/Map/leaflet-sidebar.min.js"></script>
+    <script src="SCRIPT/Map/leaflet.contextmenu.js"></script>
+    <!---------------------- Script for Map ----------------------->
+
+    <script src="SCRIPT/Map/TrainStations.js"></script>
+    <script src="SCRIPT/Map/GeoJSONLocations.js"></script>
+    <script type="text/javascript">
+         var coord
+         var map
+         var attrb
+
+         $(document).ready(function () {
+             $("#AtrTable").removeData();
+             //LoadMarkers()
+             LoadMaps()
+            // GetAttributesTable()
+         });
+
+          
+
+         function getrowID(rowid) {
+             var i = rowid
+             var y = mLocation[i - 1];
+             //var y =  $(this).find('Latitude').text()
+             map.setView([$(y).find('Latitude').text(), $(y).find('Latitude').text()], 18);
+         };
+         var mLocation
+
+        
+        function LoadMarkers() {
+            map = L.map('map').setView([6.366620, 3.21535], 12);
+             //var m = L.marker([8.4756, 4.5296], { icon: L.icon({ iconUrl: 'img/marker-icon.png', color: '0044FF', iconSize: [15, 20] }) }).addTo(map);
+             var layer = new L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                 attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> | <a href="http://www.naziriteng.com"> Nazirite Communication</a>'
+             }).addTo(map);
+
+             //GetDataFromServer();
+
+             var cluster = L.markerClusterGroup();
+
+             var geojsonLocations = L.geoJson(Locations, {
+                    onEachFeature: function (feature, layer) {
+                        attrb = '<table class="table table-condensed table-hover">' + '<tr><td class="bg-info">' + "Company Name" + '</td>' + '<td>' + feature.properties.CompanyName + '</td></tr>' +
+                            '<tr><td class="bg-info">' + "Company Address" + '</td>' + '<td>' + feature.properties.CompanyAddress + '</td></tr>'
+                     + '<tr><td class="bg-info">' + "Phone No" + '</td>' + '<td>' + feature.properties.Phone + '</td></tr>'
+                     + '<tr><td class="bg-info">' + "Email" + '</td>' + '<td>' + feature.properties.Email + '</td></tr>'
+                     + '</table>'
+                        layer.bindPopup(attrb);
+                    },
+                    style: L.icon({ iconUrl: 'IMAGES/marker-icon.png', color: 'red', iconSize: [25, 40] })
+             });
+             cluster.addLayer(geojsonLocations)
+             map.addLayer(cluster);
+
+             //map.fitBounds(cluster.getBounds());
+
+             //GetRecordcount();
+         };
+         function onEachFeatureTerminers(feature, layer) {
+             // does this feature have a property named popupContent?
+             attrb = '<table class="table table-condensed table-hover">' + '<tr><td class="bg-info">' + "Company Name" + '</td>' + '<td>' + feature.properties.CompanyName + '</td></tr>' +
+                 '<tr><td class="bg-info">' + "Company Address" + '</td>' + '<td>' + feature.properties.CompanyAddress + '</td></tr>'
+                 + '<tr><td class="bg-info">' + "Phone No" + '</td>' + '<td>' + feature.properties.Phone + '</td></tr>'
+                    + '<tr><td class="bg-info">' + "Email" + '</td>' + '<td>' + feature.properties.Email + '</td></tr>'
+                    + '</table>'
+             layer.bindPopup(attrb);
+         };
+
+         function LoadMaps() {
+             map = L.map('map').setView([6.5942998, 3.3373352999999497], 12);
+             //var m = L.marker([8.4756, 4.5296], { icon: L.icon({ iconUrl: 'img/marker-icon.png', color: '0044FF', iconSize: [15, 20] }) }).addTo(map);
+             var layer = new L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                 attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> | <a href="http://www.naziriteng.com"> Nazirite Communication</a>'
+             }).addTo(map);
+
+             var sidebar = L.control.sidebar('sidebar').addTo(map);
+
+             var cluster = L.markerClusterGroup();
+
+             var geojsonTerminals = L.geoJson(Locations, {
+                 onEachFeature: onEachFeatureTerminers,
+                 pointToLayer: function (feature, latlng) {
+                     return L.marker(latlng, {
+                         icon: L.icon({
+                             iconUrl: 'IMAGES/marker-icon.png',
+                             shadowUrl: 'IMAGES/marker-shadow.png',
+                             color: '0044FF',
+                             iconSize: [25, 40]
+                         })
+                     });
+                 }
+             });
+             cluster.addLayer(geojsonTerminals)
+             map.addLayer(cluster);
+
+             GetAttributesTable();
+         };
+         function ZoomToSelection(sel) {
+             var str = sel.value;
+             var coord = new Array();
+             coord = str.split(",");
+             var lat = coord[0];
+             var lon = coord[1];
+             //alert(lat + " and " + lon);
+             map.setView([lat, lon], 16);
+
+             var searchMarker
+             if (searchMarker) {
+                 map.removeLayer(searchMarker);
+             }
+                                      
+         }
+         ;
+
+    </script>
+    <!------------------------------- SCRIPT LINE ENDED ------------------------------->
+</body>
+</html>
